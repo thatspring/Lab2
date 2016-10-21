@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="usr" extends="struts-default">
+		<action name="login" class="usr.UserAction" method="login">
+			<result name="loginout">/error.jsp</result>
+			<result name="loginin">/search.jsp</result>
+		</action>
+	
+		<action name="regist" class="usr.UserAction" method="regist">
+			<result name="error">/error.jsp</result>
+			<result name="success">/welcome.jsp</result>
+		</action>
+	</package>
+	
+	<package name="book" extends="struts-default" >
+		<action name="search" class="book.BookAction" method="search">
+			<result name="no author">/error.jsp</result>
+			<result name="find">/manager.jsp</result>
+		</action>
+		<action name="bookinfo" class="book.BookAction" method="bookinfo">
+			<result name="display">/bookinfo.jsp</result>
+		</action>
+		<action name="delete" class="book.BookAction" method="delete">
+			<result name="dele">/search.jsp</result>
+		</action>
+	</package>
+	
+</struts>    

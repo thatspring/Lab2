@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>添加新的作者</title>
+
+<style>
+.content{
+	margin-top: 100px;
+}
+.content button{
+	height: 30px;
+	color: white;
+	font-size: 18px;
+	border:0px;
+	padding:0px;
+	cursor: pointer;
+}
+/*信息面板*/
+.content .panel{
+	background-color: rgba(255,255,255,.9);
+	width: 600px;
+	text-align:center;
+	margin:0px auto;
+	padding-top:20px;
+	padding-bottom:20px;
+	border:0px;
+	border-radius:5px;
+}
+/*输入组*/
+.content .panel .group{
+	text-align:left;
+	width:500px;
+	margin:0px auto 20px;
+}
+.content .panel .group label{
+	line-height:30px;
+	font-size:18px;
+}
+.content .panel .group input{
+	width:500px;
+	height:30px;
+	border:1px solid #ddd;
+	padding:0px 0px 0px 10px;
+	font-size:16px;
+}
+.content .panel .login button{
+	background-color: #CC865E;
+	width: 260px;
+}
+
+.content .panel .login button:hover{
+	background-color: white;/*按钮选中后背景颜色为白色*/
+    color:  #CC865E;/*按钮选中后字体颜色为褐色*/
+    border: 1px solid #CC865E;/*按钮选中后边框颜色为褐色*/
+}
+
+
+
+</style>
+
+</head>
+<body>
+
+<div id="Layer1" style="position:absolute;left:0;top:0;width:100%; height:100%; z-index:-1">    
+<img src="source/bookshelf.jpg" height="100%" width="100%">    
+</div>
+
+<div class="content">
+	<div class="panel">
+		<h1>添加新的作家</h1>
+		<div class="group">
+			<label>作者名</label>
+			<input placeholder="XXX">
+		</div>
+		<div class="group">
+			<label>作者ID</label>
+			<input placeholder="ex: number">
+		</div>
+		<div class="group">
+			<label>年龄</label>
+			<input placeholder="ex:30">
+		</div>
+		<div class="group">
+			<label>国籍</label>
+			<input placeholder="ex:China">
+		</div>
+		<!-- 添加按钮 -->
+		<div class="login">
+			<button>添加</button>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

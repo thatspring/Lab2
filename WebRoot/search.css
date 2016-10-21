@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+
+
+.content{
+	/*margin-top: 200px;
+	margin-left: 505px;*/
+	background-color: rgba(0,0,0);
+}
+
+
+#search_box{
+	width: 643px;
+	height: 42px;
+	margin-top:250px;
+	margin-left:450px;
+	background:#FFFFFF;
+	border-radius: 5px;
+}
+#search_box #s{
+	float: left;
+	width:600px;
+	height:40px;
+	padding:0px;
+	border:1px solid #ddd;
+	font-size:25px;
+	border-radius: 5px;
+}
+
+#search_box #go{
+	float:right;
+	width:39px;
+	height:39px;
+	border-radius: 5px;
+	border:1px solid #ddd;
+}
+
+.content :focus{
+	background-color: rgba(255,255,255,.2);
+}
